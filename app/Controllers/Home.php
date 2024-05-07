@@ -6,9 +6,9 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        $data['title'] = "Dasboard";
-        $data['activeMenu'] = "Dashboard";
-
-        return view('pages/dashboard_view', $data);
+        $data = [
+            'title' => 'Dashboard'
+        ];
+        return view('pages/admin_dashboard', $data);
     }
 }

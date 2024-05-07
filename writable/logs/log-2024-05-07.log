@@ -1,0 +1,173 @@
+CRITICAL - 2024-05-07 13:09:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/footer.php')
+ 2 SYSTEMPATH\View\View.php(484): CodeIgniter\View\View->render('layouts/footer', null, true)
+ 3 APPPATH\Views\layout\home_layout.php(26): CodeIgniter\View\View->include('layouts/footer')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-kel7\\app\\Views\\layout\\home_layout.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layout/home_layout', [], true)
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/home', [], true)
+ 8 APPPATH\Controllers\Home.php(12): view('pages/home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 13:12:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/footer.php')
+ 2 SYSTEMPATH\View\View.php(484): CodeIgniter\View\View->render('layouts/footer', null, true)
+ 3 APPPATH\Views\layout\home_layout.php(26): CodeIgniter\View\View->include('layouts/footer')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-kel7\\app\\Views\\layout\\home_layout.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layout/home_layout', [], true)
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pages/home', [], true)
+ 8 APPPATH\Controllers\Home.php(12): view('pages/home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:00:31 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+INFO - 2024-05-07 16:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-07 16:01:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:02:42 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:03:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:04:05 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:07:41 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:07:50 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:09:59 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:10:13 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+INFO - 2024-05-07 16:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-07 16:11:36 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+CRITICAL - 2024-05-07 16:13:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/login_action]
+in APPPATH\Controllers\login.php on line 32.
+ 1 APPPATH\Controllers\login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\perpus-kel7\\app\\Controllers\\login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\login->login_action()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
+INFO - 2024-05-07 16:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-07 16:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
