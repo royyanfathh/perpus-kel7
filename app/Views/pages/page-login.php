@@ -13,6 +13,7 @@
                 <div class="login-form">
                     <form method="POST" action="<?= base_url('login/login_action'); ?>">
                         <div class="form-group">
+                        <center><h5>Login Member</h5></center>
                             <label>Email address</label>
                             <input type="email" name="email" class="form-control" placeholder="Email">
                         </div>

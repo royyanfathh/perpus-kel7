@@ -5,21 +5,14 @@ use App\Models\loginuser;
 
 class login extends BaseController
 {
-    public function index(): string
+    public function index()
     {
         $data = [
             'title' => 'Login'
         ];
         return view('pages/page-login', $data);
     }
-    public function register(): string
-    {
-        $data = [
-            'title' => 'Register'
-        ];
-        return view('pages/page-register', $data);
-    }
-
+   
     public function login_action()
     {
         $login = new loginuser();
