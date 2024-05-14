@@ -7,8 +7,8 @@ class Home extends BaseController
     public function index(): string
     {
         $data = [
-            'title' => 'Dashboard'
+            'title' => 'Index'
         ];
-        return view('pages/admin_dashboard', $data);
+        return view('pages/landing', $data);
     }
 }

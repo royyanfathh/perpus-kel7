@@ -25,7 +25,7 @@ class login extends BaseController
             session()->set('email', $cek['email']);
             session()->set('username', $cek['username']);
             session()->set('id', $cek['id']);
-            return redirect()->to(base_url('Home'));
+            return redirect()->to(base_url('dashboard'));
         } else {
             return redirect()->to(base_url('login')); 
         }
