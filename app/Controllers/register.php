@@ -72,6 +72,7 @@ class register extends BaseController
           session()->setFlashdata('error', $this->validator->listErrors());
           return redirect()->back()->withInput();
       }
+    //   $hashedPassword = password_hash($this->request->getVar('password'), PASSWORD_DEFAULT);
       $role = 'Anggota';
       $users = new UserModel();
       $users->insert([
