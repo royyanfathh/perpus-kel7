@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2024-05-20 03:32:49 --> CodeIgniter\Filters\Exceptions\FilterException: "Auth" filter must have a matching alias defined.
 [Method: GET, Route: dashboard]
 in SYSTEMPATH\Filters\Filters.php on line 495.
@@ -571,3 +572,9 @@ in APPPATH\Controllers\login.php on line 10.
 10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-kel7\\public\\index.php')
 INFO - 2024-05-20 04:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-05-20 04:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+INFO - 2024-05-20 01:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-20 02:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> f1d052ce38682ff6f948a39b452eed5a880369a3
+INFO - 2024-05-20 04:19:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-20 04:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

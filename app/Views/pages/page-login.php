@@ -12,6 +12,7 @@
                 </div>
                 <div class="login-form">
                     <form method="POST" action="<?= base_url('login/login_action'); ?>">
+                    <?= csrf_field(); ?>
                         <div class="form-group">
                         <center><h5>Login Member</h5></center>
                             <label>Email address</label>
