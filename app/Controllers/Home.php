@@ -11,4 +11,12 @@ class Home extends BaseController
         ];
         return view('pages/landing', $data);
     }
+
+    public function buku()
+    {
+        $data = [
+            'title' => 'buku'
+        ];
+        return view('pages/daftarbuku', $data);
+    }
 }
