@@ -19,4 +19,11 @@ class Home extends BaseController
         ];
         return view('pages/daftarbuku', $data);
     }
+    public function crudBuku()
+    {
+        $data = [
+            'title' => 'CRUD Buku'
+        ];
+        return view('pages/crud_buku', $data);
+    }
 }

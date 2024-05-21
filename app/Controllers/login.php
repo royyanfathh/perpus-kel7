@@ -5,6 +5,11 @@ use App\Models\loginuser;
 
 class login extends BaseController
 {
+    public function __construct()
+    {
+       helper('form');
+    }
+
     public function index()
     {
         $data = [
@@ -13,23 +18,9 @@ class login extends BaseController
         return view('pages/page-login', $data);
     }
    
-    public function login_action()
+    public function cekLogin()
     {
-        $login = new loginuser();
-        $email = $this->request->getPost('email');
-        $password = $this->request->getPost('password');
-        
-        $cek = $login->get_data($email, $password);
-        
-        if($cek && isset($cek['email']) && isset($cek['password']) && $cek['email'] == $email && $cek['password'] == $password) {
-            session()->set('email', $cek['email']);
-            session()->set('username', $cek['username']);
-            session()->set('id', $cek['id']);
-            return redirect()->to(base_url('dashboard'));
-        } else {
-            return redirect()->to(base_url('login')); 
-        }
-        
+       
     }
 
     public function logout()
