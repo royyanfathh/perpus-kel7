@@ -1,6 +1,5 @@
 <?= $this->extend('layout/login'); ?>
 <?= $this->section('content'); ?>
-
 <body class="bg-dark">
     <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
@@ -19,7 +18,7 @@
                         <div class="alert alert-danger" role="alert">
                             <h4>Periksa entrian form</h4>
                             <ul>
-                                <?php foreach ($errors as $key => $value) { ?>
+                                <?php foreach ($errors as $error) { ?>
                                     <li><?= esc($error) ?></li>
                                 <?php } ?>
                             </ul>

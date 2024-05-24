@@ -13,6 +13,7 @@ use CodeIgniter\Filters\PageCache;
 use CodeIgniter\Filters\PerformanceMetrics;
 use CodeIgniter\Filters\SecureHeaders;
 
+
 class Filters extends BaseFilters
 {
     /**
@@ -34,6 +35,7 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        'filteruser'    => \App\Filters\filterUser::class,
     ];
 
     /**
@@ -69,11 +71,27 @@ class Filters extends BaseFilters
      */
     public array $globals = [
         'before' => [
+            'filteruser' => [
+                'except' => [
+                    'login', 'login/*',
+                    'Home', 'index',
+                    '/daftarbuku',
+                    '/'
+                ]
+            ]
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
         ],
         'after' => [
+            'filteruser' => [
+                'except' => [
+                    'login', 'login/*',
+                    'Home', 'index',
+                    '/daftarbuku',
+                    '/'
+                ]
+            ]
             // 'honeypot',
             // 'secureheaders',
         ],
