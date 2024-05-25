@@ -50,7 +50,7 @@
 <body>
 <?= $this->renderSection('daftarbuku'); ?>
 <script src="buku/jquery.min.js"></script>
-    <script src="buku/jquery-migrate-3.0.0.js"></script>
+    <script src="buku/jquery-migrate-3.0.0.js"></script> 
 	<script src="buku/jquery-ui.min.js"></script>
 	<!-- Popper JS -->
 	<script src="buku/popper.min.js"></script>
