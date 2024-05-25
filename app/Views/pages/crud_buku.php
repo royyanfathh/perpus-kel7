@@ -10,7 +10,7 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="/">Dashboard</a></li>
-                            <li class="active">Data table</li>
+                            <li class="active">Data Buku</li>
                         </ol>
                     </div>
                 </div>

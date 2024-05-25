@@ -7,8 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/daftarbuku', 'Home::buku');
-$routes->get('/dashboard', 'dashboard::index');
 $routes->get('/login', 'login::index');
 $routes->get('/register', 'register::index');
 $routes->post('/register/process', 'register::process');
-$routes->get('/dataBuku', 'Home::crudBuku');
+$routes->get('/dataBuku', 'crudBuku::index');

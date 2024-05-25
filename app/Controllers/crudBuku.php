@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class crudBuku extends BaseController
 {
-    public function crudBuku()
+    public function index()
     {
         $data = [
             'title' => 'CRUD Buku'

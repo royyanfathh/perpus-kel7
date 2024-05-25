@@ -90,6 +90,7 @@ class Filters extends BaseFilters
                     'login', 'login/*',
                     'Home', 'index',
                     '/daftarbuku',
+                    'Kategori', 'index/*',
                     '/'
                 ]
             ]

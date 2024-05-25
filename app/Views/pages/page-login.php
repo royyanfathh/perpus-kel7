@@ -15,21 +15,21 @@
                     //notifikasi
                     $errors = session()->getFlashdata('errors');
                     if (!empty($errors)) { ?>
-                        <div class="alert alert-danger" role="alert">
-                            <h4>Periksa entrian form</h4>
-                            <ul>
-                                <?php foreach ($errors as $error) { ?>
-                                    <li><?= esc($error) ?></li>
-                                <?php } ?>
-                            </ul>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <span class="badge badge-pill badge-danger">Alert</span> Periksa Entrian Form!
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                         </div>
                     <?php } ?>
-
                     <?php
                     if (session()->getFlashdata('pesan')) {
-                        echo '<div class="alert alert-danger" role="alert">';
-                        echo session()->getFlashdata('pesan');
-                        echo '</div>';
+                    echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">';
+                    echo '<span class="badge badge-pill badge-danger">Alert</span> '.session()->getFlashdata('pesan');
+                    echo '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
+                    echo '<span aria-hidden="true">&times;</span>';
+                    echo '</button>';
+                    echo '</div>';
                     }
                     ?>
                     <div class="form-group">
