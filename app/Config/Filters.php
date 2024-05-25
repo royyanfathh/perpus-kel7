@@ -75,6 +75,7 @@ class Filters extends BaseFilters
                 'except' => [
                     'login', 'login/*',
                     'Home', 'index',
+                    'register', 'register/*',
                     '/daftarbuku',
                     '/'
                 ]
