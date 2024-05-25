@@ -10,7 +10,7 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="/dashboard">Dashboard</a></li>
-                            <li class="active">Data Kategori</li>
+                            <li class="active">Data Penerbit</li>
                         </ol>
                     </div>
                 </div>
@@ -43,16 +43,20 @@
                                     <thead>
                                         <tr class="text-center">
                                             <th width="50px">No</th>
-                                            <th>Nama Kategori</th>
+                                            <th width="300">Nama Penerbit</th>
+                                            <th width="300">Alamat</th>
+                                            <th width="150">Telp</th>
                                             <th width="300px">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php $no = 1;
-                                        foreach ($kategori as $key => $value) { ?>
+                                        foreach ($penerbit as $key => $value) { ?>
                                         <tr>
                                             <td  class="text-center"><?= $no++ ?>.</td>
                                             <td  class="text-center"><?= $value['nama'] ?></td>
+                                            <td  class="text-center"><?= $value['alamat'] ?></td>
+                                            <td  class="text-center"><?= $value['telp'] ?></td>
                                             <td class ="text-center">
                                             <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal-edit<?= $value['id'] ?>">
                                                 <i class="bi bi-pencil-square"></i> Edit
@@ -72,23 +76,25 @@
             </div><!-- .animated -->
         </div><!-- .content -->
     </div><!-- /#right-panel -->
-    
-    
-    <!-- modal Add -->
-<div class="modal fade" id="modal-sm">
+<!-- modal add -->
+    <div class="modal fade" id="modal-sm">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Tambah Kategori</h4>
+                <h4 class="modal-title">Tambah Penerbit</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-               <?php echo form_open(base_url('Kategori/Add')) ?>
+               <?php echo form_open(base_url('Penerbit/Add')) ?>
                <div class="form-group">
-                <label>Nama Kategori</label>
-                <input type="text" class="form-control"  name="nama" placeholder="Nama Kategori" required>
+                <label>Nama Penerbit</label>
+                <input type="text" class="form-control"  name="nama" placeholder="Nama Penerbit" required>
+                <label>Alamat</label>
+                <input type="text" class="form-control"  name="alamat" placeholder="Alamat" required>
+                <label>No Telp</label>
+                <input type="text" class="form-control"  name="telp" placeholder="Telp" required>
                </div>
             </div>
             <div class="modal-footer justify-content-between">
@@ -100,22 +106,26 @@
     </div>
 </div>
 
-   <!-- modal edit -->
-   <?php foreach ($kategori as $key => $value) { ?> 
+<!--modal edit -->
+<?php foreach ($penerbit as $key => $value) { ?> 
    <div class="modal fade" id="modal-edit<?= $value['id'] ?>">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Edit Kategori</h4>
+                <h4 class="modal-title">Edit Penerbit</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-               <?php echo form_open(base_url('Kategori/EditData/'.$value['id'])) ?>
+               <?php echo form_open(base_url('Penerbit/EditData/'.$value['id'])) ?>
                <div class="form-group">
-                <label>Nama Kategori</label>
+                <label>Nama Penerbit</label>
                 <input type="text" class="form-control" value="<?= $value['nama'] ?>" name="nama" placeholder="Nama Kategori" required>
+                <label>Alamat</label>
+                <input type="text" class="form-control" value="<?= $value['alamat'] ?>" name="alamat" placeholder="Alamat" required>
+                <label>No Telp</label>
+                <input type="text" class="form-control" value="<?= $value['telp'] ?>" name="telp" placeholder="No Telp" required>
                </div>
             </div>
             <div class="modal-footer justify-content-between">
@@ -129,18 +139,18 @@
 <?php } ?>
 
 <!-- modal delete -->
-<?php foreach ($kategori as $key => $value) { ?> 
+<?php foreach ($penerbit as $key => $value) { ?> 
    <div class="modal fade" id="modal-delete<?= $value['id'] ?>">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Hapus Kategori</h4>
+                <h4 class="modal-title">Hapus Penerbit</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-               <?php echo form_open(base_url('Kategori/DeleteData/'.$value['id'])) ?>
+               <?php echo form_open(base_url('Penerbit/DeleteData/'.$value['id'])) ?>
                <div class="form-group">
                 Apakah Anda Yakin ingin menghapus data <b><?= $value['nama']?></b>?
                </div>
@@ -154,4 +164,5 @@
     </div>
 </div>
 <?php } ?>
+
     <?= $this->endSection();

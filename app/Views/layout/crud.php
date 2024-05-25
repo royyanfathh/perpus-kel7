@@ -52,13 +52,14 @@
                     <li>
                         <a href="/dashboard"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
-                    <h3 class="menu-title">Master Buku</h3><!-- /.menu-title -->
+                    <h3 class="menu-title">Buku</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-table"></i><a href="/dataBuku">Data Buku</a></li>
                             <li><i class="fa fa-table"></i><a href="/Kategori">Data Kategori</a></li>
-                            <li><i class="fa fa-table"></i><a href="/dataRak">Data Rak</a></li>
+                            <li><i class="fa fa-table"></i><a href="/Penerbit">Data Penerbit</a></li>
+                            <li><i class="fa fa-table"></i><a href="/Penulis">Data Penulis</a></li>
                         </ul>
                     </li>
                     <h3 class="menu-title">Peminjaman</h3><!-- /.menu-title -->

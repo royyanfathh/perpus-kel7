@@ -91,6 +91,7 @@ class Filters extends BaseFilters
                     'Home', 'index',
                     '/daftarbuku',
                     'Kategori', 'index/*',
+                    'Penerbit', 'index/*',
                     '/'
                 ]
             ]
