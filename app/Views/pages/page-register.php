@@ -23,7 +23,7 @@
                     <form action="<?= base_url('/register/process'); ?>" method="POST">
                         <?= csrf_field(); ?>
                         <div class="form-group">
-                            <center><h5>Register Member</h5></center>
+                            <center><h5>Register</h5></center>
                             <label>Name</label>
                             <input type="text" name="nama" class="form-control" placeholder="Name">
                         </div>

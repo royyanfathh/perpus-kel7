@@ -34,7 +34,7 @@
                     ?>
                     <div class="form-group">
                         <center>
-                            <h5>Login Member</h5>
+                            <h5>Login</h5>
                         </center>
                         <label>Email address</label>
                         <input type="email" name="email" class="form-control" placeholder="Email" autofocus>
