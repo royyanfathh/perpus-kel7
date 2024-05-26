@@ -61,6 +61,7 @@
                         </div>
                         <div class="register-link m-t-15 text-center">
                             <p>Already have account ? <a href="/login"> Sign in</a></p>
+                            <p><a href="/"> Back To Home</a></p>
                         </div>
                     </form>
                 </div>

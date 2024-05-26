@@ -43,8 +43,8 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
-                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                <a class="navbar-brand" href="/dashboard"><img src="images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="/dashboard"><img src="images/logo2.png" alt="Logo"></a>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -69,12 +69,13 @@
                         </ul>
                     </li>
                     </li>
-                    <h3 class="menu-title">User</h3><!-- /.menu-title -->
+                    <h3 class="menu-title">Transaksi</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon bi bi-people-fill mt-0 mb-2"></i>User</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon bi bi-book mt-0 mb-2"></i>Buku</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="bi bi-person mt-0"></i><a href="charts-chartjs.html">Anggota</a></li>
-                            <li><i class="bi bi-person-gear"></i><a href="charts-flot.html">Petugas</a></li>
+                            <li><i class="bi bi-arrow-left-right mt-0 mb-2"></i><a href="charts-chartjs.html">Peminjaman Buku</a></li>
+                            <li><i class="bi bi-check-lg mt--0 mb-2"></i><a href="charts-flot.html">Pengembalian Buku</a></li>
+                            <li><i class="bi bi-currency-dollar mt-0"></i><a href="charts-flot.html">Denda</a></li>
                         </ul>
                     </li>
                 </ul>
