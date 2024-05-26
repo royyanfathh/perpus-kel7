@@ -64,8 +64,8 @@
                         <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon bi bi-people-fill mt-0 mb-2"></i>User</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="bi bi-person mb-2"></i><a href="charts-chartjs.html">Anggota</a></li>
-                            <li><i class="bi bi-person-gear"></i><a href="charts-flot.html">Petugas</a></li>
+                            <li><i class="bi bi-person mb-2"></i><a href="/Anggota">Anggota</a></li>
+                            <li><i class="bi bi-person-gear"></i><a href="/Petugas">Petugas</a></li>
                         </ul>
                     </li>
                     </li>

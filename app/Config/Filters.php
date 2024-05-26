@@ -74,9 +74,8 @@ class Filters extends BaseFilters
             'filteruser' => [
                 'except' => [
                     'login', 'login/*',
-                    'Home', 'index',
                     'register', 'register/*',
-                    '/daftarbuku',
+                    'DetailBuku', 'index/*',
                     '/'
                 ]
             ]
@@ -88,8 +87,7 @@ class Filters extends BaseFilters
             'filteruser' => [
                 'except' => [
                     'login', 'login/*',
-                    'Home', 'index',
-                    '/daftarbuku',
+                    'Home', 'index/*',
                     'Kategori', 'index/*',
                     'Penerbit', 'index/*',
                     '/'

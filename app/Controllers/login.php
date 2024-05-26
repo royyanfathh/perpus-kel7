@@ -51,7 +51,11 @@ class login extends BaseController
                 session()->set('nama', $cek_login['nama']);
                 session()->set('email', $cek_login['email']);
                 session()->set('role', $cek_login['role']);
+            if($cek_login['role'] == 'Petugas') {
                 return redirect()->to(base_url('dashboard'));
+            }else {
+                return redirect()->to(base_url('/daftarbuku'));
+            }
             } else {
                 //jika login gagal
                 session()->setFlashdata('pesan', 'email atau password salah !');

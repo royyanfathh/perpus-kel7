@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1715604905;_ci_previous_url|s:40:"http://localhost:8080/index.php/register";error|s:238:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>telp Minimal 11 karakter</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
-";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:9:{s:14:"csrf_test_name";s:32:"599e081eff1f942dd386811b5b38c010";s:4:"nama";s:15:"mukhammad kevin";s:2:"jk";s:9:"laki-laki";s:4:"telp";s:9:"088217887";s:6:"alamat";s:7:"cirebon";s:4:"role";s:7:"Anggota";s:5:"email";s:15:"kevin@gmail.com";s:8:"username";s:10:"kevin oreo";s:8:"password";s:8:"kevin123";}}_ci_validation_errors|a:1:{s:4:"telp";s:24:"telp Minimal 11 karakter";}
