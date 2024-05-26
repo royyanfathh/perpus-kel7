@@ -34,10 +34,10 @@
                     ?>
                     <div class="form-group">
                         <center>
-                            <h5>Login Member</h5>
+                            <h5>Login</h5>
                         </center>
                         <label>Email address</label>
-                        <input type="email" name="email" class="form-control" placeholder="Email">
+                        <input type="email" name="email" class="form-control" placeholder="Email" autofocus>
                     </div>
                     <div class="form-group">
                         <label>Password</label>
@@ -48,6 +48,7 @@
                     </div>
                     <div class="register-link m-t-15 text-center">
                         <p>Don't have account ? <a href="/register"> Sign Up Here</a></p>
+                        <p><a href="/"> Back To Home</a></p>
                     </div>
                     <?php echo form_close() ?>
                 </div>
