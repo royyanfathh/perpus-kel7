@@ -20,8 +20,6 @@
 							<div class="row">
 							<?php $no = 1;
           foreach ($buku as $key => $value) { ?>
-							<?php $no = 1;
-          foreach ($penulis as $key => $nama) { ?>
 								<div class="col-xl-3 col-lg-4 col-md-4 col-12">
 									<div class="single-product">
 										<div class="product-img">
@@ -42,12 +40,19 @@
 										<div class="product-content text-center">
 											<h3><a href='<?= base_url('DetailBuku/index/' .$value['id']) ?>'><h4><?= $value['judul'] ?></h4></a></h3>
 											<div class="product-price text-center">
-												<span>Penulis: <?= $nama['nama'] ?></span>
+												<span>Penulis:
+												<?php
+          								foreach ($penulis as $key => $nama) { 
+														if($value['penulis_id'] == $nama['id']){
+															 echo $nama['nama']; 
+															 break;
+														}
+													} ?>
+													</span>
 											</div>
 										</div>
 									</div>
 								</div>
-								<?php } ?>
 								<?php } ?>
 							</div>
 						</div>
