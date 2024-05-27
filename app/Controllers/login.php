@@ -51,6 +51,7 @@ class login extends BaseController
                 session()->set('nama', $cek_login['nama']);
                 session()->set('email', $cek_login['email']);
                 session()->set('role', $cek_login['role']);
+                
                 return redirect()->to(base_url('dashboard'));
             } else {
                 //jika login gagal
