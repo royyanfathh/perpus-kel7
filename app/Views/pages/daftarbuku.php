@@ -29,7 +29,7 @@
 											</a>
 											<div class="button-head">
 												<div class="product-action">
-															<a class=" ti-eye"></i><span>Ajukan Pinjaman</span></a>
+													<a	class=" ti-eye"></i><span>Ajukan Pinjaman</span></a>
 												</div>
 												<div class="product-action-2">
 													<a title="Add to cart" href="/dashboard">Pinjam Sekarang!</a>
