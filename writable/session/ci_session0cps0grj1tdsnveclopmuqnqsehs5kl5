@@ -1,9 +1,0 @@
-__ci_last_regenerate|i:1715578128;_ci_previous_url|s:40:"http://localhost:8080/index.php/register";email|s:14:"abin@gmail.com";username|s:8:"abintoro";id|s:1:"1";error|s:230:"<!-- DEBUG-VIEW START 1 SYSTEMPATH\Validation\Views\list.php -->
-	<div class="errors" role="alert">
-		<ul>
-					<li>nama Harus diisi</li>
-				</ul>
-	</div>
-
-<!-- DEBUG-VIEW ENDED 1 SYSTEMPATH\Validation\Views\list.php -->
-";__ci_vars|a:3:{s:5:"error";s:3:"old";s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:9:{s:14:"csrf_test_name";s:32:"b148accf94587efac3efe1da65339b1c";s:4:"name";s:12:"Salma Umayna";s:2:"jk";s:9:"Perempuan";s:4:"telp";s:11:"08818357156";s:6:"alamat";s:7:"cirebon";s:4:"role";s:7:"Anggota";s:5:"email";s:21:"salmaumayna@gmail.com";s:8:"username";s:10:"salma12345";s:8:"password";s:8:"salma123";}}_ci_validation_errors|a:1:{s:4:"nama";s:16:"nama Harus diisi";}

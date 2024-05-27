@@ -1,10 +1,6 @@
 <?= $this->extend('layout/daftarbuku'); ?>
 <?= $this->section('daftarbuku'); ?>
 <div class="container">
-	<a href="<?= base_url(); ?>" class="btn btn-outline-primary m-3 mt-4 position-absolute">
-		<i class="ti ti-home"></i>
-		Home
-	</a>
 	<div class="row">
 		<div class="col-12">
 			<div class="section-title">
@@ -39,6 +35,7 @@
 															class=" ti-eye"></i><span>Quick Shop</span></a>
 													<a title="Wishlist" href="#"><i class="ti-heart"></i><span>Add to Wishlist</span></a>
 													<a title="Compare" href="#"><i class="ti-bar-chart-alt"></i><span>Add to Compare</span></a>
+															class=" ti-eye"></i><span>Ajukan Pinjaman</span></a>
 												</div>
 												<div class="product-action-2">
 													<a title="Add to cart" href="/dashboard">Pinjam Sekarang!</a>
@@ -46,7 +43,7 @@
 											</div>
 										</div>
 										<div class="product-content text-center">
-											<h3><a href=""><?= $value['judul'] ?></a></h3>
+											<h3><a href='<?= base_url('DetailBuku/index/' .$value['id']) ?>'><h4><?= $value['judul'] ?></h4></a></h3>
 											<div class="product-price text-center">
 												<span>Penulis: <?= $nama['nama'] ?></span>
 											</div>
