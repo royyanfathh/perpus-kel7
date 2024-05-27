@@ -5,6 +5,8 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\PetugasModel;
+use App\Models\ProfilAdmin; 
+
 
 class Petugas extends BaseController
 {
@@ -12,12 +14,17 @@ class Petugas extends BaseController
     {
         helper('form');
         $this->PetugasModel = new PetugasModel;
+        $this->ProfilAdmin = new ProfilAdmin;
+
     }
     public function index()
     {
+        $id_admin = session()->get('id');
         $data = [
             'title' => 'CRUD Petugas',
             'petugas' => $this->PetugasModel->Alldata(),
+            'admin' => $this->ProfilAdmin->Profil($id_admin),
+
         ];
         return view('pages/crud_petugas', $data);
     }

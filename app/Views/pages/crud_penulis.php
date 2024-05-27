@@ -141,7 +141,7 @@
 <!-- modal delete -->
 <?php foreach ($penulis as $key => $value) { ?> 
    <div class="modal fade" id="modal-delete<?= $value['id'] ?>">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Hapus Penulis</h4>

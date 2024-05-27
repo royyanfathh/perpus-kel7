@@ -9,7 +9,7 @@
 		<div class="col-12">
 			<div class="section-title">
 				<br>
-				<h2>Daftar Buku</h2>
+				<h2>Detail Buku</h2>
 			</div>
 		</div>
 	</div>

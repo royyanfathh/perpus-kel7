@@ -5,6 +5,8 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\PenerbitModel;
 use CodeIgniter\HTTP\ResponseInterface;
+use App\Models\ProfilAdmin; 
+
 
 class Penerbit extends BaseController
 {
@@ -12,13 +14,16 @@ class Penerbit extends BaseController
     {
         helper('form');
         $this->PenerbitModel = new PenerbitModel;
+        $this->ProfilAdmin = new ProfilAdmin;
     }
 
     public function index()
     {
+        $id_admin = session()->get('id');
         $data = [
             'title' => 'CRUD Penerbit',
             'penerbit' => $this->PenerbitModel->Alldata(),
+            'admin' => $this->ProfilAdmin->Profil($id_admin),
         ];
         return view('pages/crud_penerbit', $data);
     }

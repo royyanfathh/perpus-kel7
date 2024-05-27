@@ -8,6 +8,7 @@ use App\Models\PenerbitModel;
 use App\Models\PenulisModel;
 use App\Models\KategoriModel;
 use CodeIgniter\HTTP\ResponseInterface;
+use App\Models\ProfilAdmin;
 
 class crudBuku extends BaseController
 {
@@ -18,15 +19,18 @@ class crudBuku extends BaseController
         $this->PenerbitModel = new PenerbitModel;
         $this->PenulisModel = new PenulisModel;
         $this->KategoriModel = new KategoriModel;
+        $this->ProfilAdmin = new ProfilAdmin;
     }
     public function index()
     {
+        $id_admin = session()->get('id');
         $data = [
             'title' => 'CRUD Buku',
             'buku' => $this->bukuModel->Alldata(),
             'penerbit' => $this->PenerbitModel->Alldata(),
             'penulis' => $this->PenulisModel->Alldata(),
             'kategori' => $this->KategoriModel->Alldata(),
+            'admin' => $this->ProfilAdmin->Profil($id_admin),
         ];
         return view('pages/crud_buku', $data);
     }

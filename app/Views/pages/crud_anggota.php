@@ -10,7 +10,7 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="/dashboard">Dashboard</a></li>
-                            <li class="active">Data Anggota</li>
+                            <li class="active">Data User</li>
                         </ol>
                     </div>
                 </div>
@@ -43,12 +43,12 @@
                                     <thead>
                                         <tr class="text-center">
                                             <th width="50px">No</th>
-                                            <th>Nama Anggota</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>No Telp</th>
-                                            <th>Alamat</th>
-                                            <th>Role</th>
-                                            <th>Email</th>
+                                            <th width="50px">Nama Anggota</th>
+                                            <th width="50px">Jenis Kelamin</th>
+                                            <th width="50px">No Telp</th>
+                                            <th width="50px">Alamat</th>
+                                            <th width="50px">Role</th>
+                                            <th width="50px">Email</th>
                                             <th>Username</th>
                                             <th>Password</th>
                                             <th width="300px">Action</th>
@@ -174,34 +174,30 @@
 <?php } ?>
 
 <?php foreach ($anggota as $key => $value) { ?> 
-   <div class="modal fade" id="modal-delete<?= $value['id'] ?>">
-    <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Hapus Anggota</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+    <div class="modal fade" id="modal-delete<?= $value['id'] ?>">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Hapus Anggota</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <?php echo form_open(base_url('Anggota/DeleteData/'.$value['id'])) ?>
+                    <div class="form-group">
+                        Apakah Anda Yakin ingin menghapus data <b><?= $value['nama']?></b>?
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+                <?php echo form_close() ?>
             </div>
-            <div class="modal-body">
-               <?php echo form_open(base_url('Anggota/DeleteData/'.$value['id'])) ?>
-               <div class="form-group">
-                Apakah Anda Yakin ingin menghapus data <b><?= $value['nama']?></b>?
-               </div>
-            </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-danger">Delete</button>
-            </div>
-            <?php echo form_close() ?>
         </div>
-
-        <!-- .animated -->
-        <!-- .content -->
-
-
-    </div><!-- /#right-panel -->
-    <?php } ?>
+    </div>
+<?php } ?>
 
 
     <?= $this->endSection();

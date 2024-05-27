@@ -206,9 +206,9 @@
 <?php } ?>
 
 <!-- modal delete -->
-<?php foreach ($buku as $key => $value) { ?> 
-   <div class="modal fade" id="modal-delete<?= $value['id'] ?>">
-    <div class="modal-dialog modal-sm">
+<?php foreach ($buku as $key => $value) { ?>
+<div class="modal fade" id="modal-delete<?= $value['id'] ?>">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Hapus Buku</h4>
@@ -217,10 +217,10 @@
                 </button>
             </div>
             <div class="modal-body">
-               <?php echo form_open(base_url('crudBuku/DeleteData/'.$value['id'])) ?>
-               <div class="form-group">
-                Apakah Anda Yakin ingin menghapus data <b><?= $value['judul']?></b>?
-               </div>
+                <?php echo form_open(base_url('crudBuku/DeleteData/'.$value['id'])) ?>
+                <div class="form-group">
+                    Apakah Anda Yakin ingin menghapus data <b><?= $value['judul']?></b>?
+                </div>
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -228,12 +228,8 @@
             </div>
             <?php echo form_close() ?>
         </div>
-
-        <!-- .animated -->
-        <!-- .content -->
-
-
-    </div><!-- /#right-panel -->
-    <?php } ?>
+    </div>
+</div>
+<?php } ?>
     <!-- Right Panel -->
     <?= $this->endSection();

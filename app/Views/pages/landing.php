@@ -14,6 +14,7 @@
                             Perpustakaan digital adalah sebuah platform daring yang menyediakan akses ke koleksi buku, artikel, jurnal, dan sumber daya informasi lainnya secara elektronik.
 							</p>
 							<a class="btn btn-default btn-lg bttn" href="/login" role="button">Login</a>
+							<a class="btn btn-default btn-lg bttn" href="/daftarbuku" role="button">Daftar Buku</a>
 						</div> <!-- /.header-wrapper -->
 					</div>	<!-- .col-sm-5 -->
 				</div> <!-- .row -->

@@ -143,13 +143,12 @@
                 <div class="col-sm-5">
                     <div class="user-area dropdown float-right">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
+                            <img class="user-avatar rounded-circle" src="images/profile.png" alt="User Avatar">
                         </a>
-
-                        <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
-                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Notifications</a>
-                            <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+                        <div class="user-menu dropdown-menu" style="min-width: 300px;">
+                            <p><i class="fa fa-user"></i> Email: <?= $admin['email'] ?></p>
+                            <p><i class="fa fa-user"></i> Username: <?= $admin['username'] ?></p>
+                            <p><i class="fa fa-cog"></i> Role: <?= $admin['role'] ?></p>
                         </div>
                     </div>
                 </div>

@@ -175,7 +175,7 @@
 
 <?php foreach ($petugas as $key => $value) { ?> 
    <div class="modal fade" id="modal-delete<?= $value['id'] ?>">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Hapus Petugas</h4>
@@ -195,13 +195,8 @@
             </div>
             <?php echo form_close() ?>
         </div>
-
-        <!-- .animated -->
-        <!-- .content -->
-
-
-    </div><!-- /#right-panel -->
-    <?php } ?>
-
-
-    <?= $this->endSection();
+    </div>
+</div>
+<!-- /#right-panel -->
+<?php } ?>
+<?= $this->endSection();

@@ -48,10 +48,12 @@ class login extends BaseController
             $cek_login = $this->loginuser->loginUser($email, $password);
             if ($cek_login) {
                 //jika login berhasil
+                session()->set('id', $cek_login['id']);
                 session()->set('nama', $cek_login['nama']);
                 session()->set('email', $cek_login['email']);
                 session()->set('role', $cek_login['role']);
             if($cek_login['role'] == 'Petugas') {
+                session()->set('isAdminLoggedIn', true);
                 return redirect()->to(base_url('dashboard'));
             }else {
                 return redirect()->to(base_url('/daftarbuku'));
@@ -70,9 +72,11 @@ class login extends BaseController
 
     public function logout()
     {
+       session()->remove('id');
        session()->remove('nama');
        session()->remove('email');
        session()->remove('role');
+       session()->remove('isAdminLoggedIn');
        session()->setFlashdata('pesan', 'Logout sukses!');
        return redirect()->to(base_url('login'));
     }

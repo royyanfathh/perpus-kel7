@@ -5,6 +5,8 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\PenulisModel;
+use App\Models\ProfilAdmin; 
+
 
 class Penulis extends BaseController
 {
@@ -12,13 +14,16 @@ class Penulis extends BaseController
     {
         helper('form');
         $this->PenulisModel = new PenulisModel;
+        $this->ProfilAdmin = new ProfilAdmin;
     }
 
     public function index()
     {
+        $id_admin = session()->get('id');
         $data = [
             'title' => 'CRUD Penulis',
             'penulis' => $this->PenulisModel->Alldata(),
+            'admin' => $this->ProfilAdmin->Profil($id_admin),
         ];
         return view('pages/crud_penulis', $data);
     }

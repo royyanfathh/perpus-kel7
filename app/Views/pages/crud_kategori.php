@@ -103,7 +103,7 @@
    <!-- modal edit -->
    <?php foreach ($kategori as $key => $value) { ?> 
    <div class="modal fade" id="modal-edit<?= $value['id'] ?>">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Edit Kategori</h4>

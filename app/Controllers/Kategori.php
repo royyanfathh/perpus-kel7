@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\KategoriModel;
+use App\Models\ProfilAdmin; 
 
 class Kategori extends BaseController
 {
@@ -12,13 +13,16 @@ class Kategori extends BaseController
     {
         helper('form');
         $this->KategoriModel = new KategoriModel;
+        $this->ProfilAdmin = new ProfilAdmin;
     }
 
     public function index()
     {
+        $id_admin = session()->get('id');
         $data = [
             'title' => 'CRUD Kategori',
             'kategori' => $this->KategoriModel->Alldata(),
+            'admin' => $this->ProfilAdmin->Profil($id_admin),
         ];
         return view('pages/crud_kategori', $data);
     }
