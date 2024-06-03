@@ -31,4 +31,9 @@ class PenulisModel extends Model
         ->where('id', $data['id'])
         ->update($data);
    }
+   protected $table = 'tb_penulis';
+   public function HitungData()
+   {
+     return $this->countAll();
+   }
 }

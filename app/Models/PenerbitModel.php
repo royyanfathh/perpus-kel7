@@ -31,4 +31,9 @@ class PenerbitModel extends Model
         ->where('id', $data['id'])
         ->update($data);
    }
+   protected $table = 'tb_penerbit';
+   public function HitungData()
+   {
+     return $this->countAll();
+   }
 }

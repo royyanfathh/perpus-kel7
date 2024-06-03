@@ -14,3 +14,5 @@ $routes->get('/dataBuku', 'crudBuku::index');
 $routes->group('dashboard', ['filter' => 'AdminAuth'], function($routes){
   $routes->get('/', 'dashboard::index');
 });
+$routes->get('/buku/(:segment)', 'DetailBuku::index/$1'); 
+

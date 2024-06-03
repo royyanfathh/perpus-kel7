@@ -8,13 +8,17 @@ use App\Models\bukuModel;
 
 class DetailBuku extends BaseController
 {
+    public function __construct()
+    {
+        helper('form');
+        $this->bukuModel = new bukuModel;
+    }
     public function index($id)
     {
         $data = [
-            'title' => 'Detil Buku',
-            //'book' => $this->bukuModel->Detail($id),
+            'title' => 'Detail Buku',
+            'buku' => $this->bukuModel->getBuku($id),
         ];
-
         return view('pages/detail_buku', $data);
     }   
 }

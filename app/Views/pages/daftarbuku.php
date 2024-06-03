@@ -42,7 +42,7 @@
 												</div>
 											</div>
 											<div class="product-content text-center">
-												<h3><a href='<?= base_url('DetailBuku/index/' . $value['id']) ?>'>
+												<h3><a href='/buku/<?= $value['id']; ?>'>
 														<h4><?= $value['judul'] ?></h4>
 													</a></h3>
 												<div class="product-price text-center">

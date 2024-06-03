@@ -15,6 +15,13 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('vendors/bootstrap/dist/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('vendors/font-awesome/css/font-awesome.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('vendors/themify-icons/css/themify-icons.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('vendors/flag-icon-css/css/flag-icon.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('vendors/selectFX/css/cs-skin-elastic.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('vendors/jqvmap/dist/jqvmap.min.css') ?>">
 
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
@@ -40,7 +47,8 @@
         <nav class="navbar navbar-expand-sm navbar-default">
 
             <div class="navbar-header">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="/dashboard"><img src="images/logo.png" alt="Logo"></a>
@@ -54,15 +62,17 @@
                     </li>
                     <h3 class="menu-title">Data</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Buku</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Buku</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-table"></i><a href="/dataBuku">Data Buku</a></li>
                             <li><i class="fa fa-table"></i><a href="/Kategori">Data Kategori</a></li>
                             <li><i class="fa fa-table"></i><a href="/Penerbit">Data Penerbit</a></li>
                             <li><i class="fa fa-table"></i><a href="/Penulis">Data Penulis</a></li>
                         </ul>
-                        <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon bi bi-people-fill mt-0 mb-2"></i>User</a>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> <i class="menu-icon bi bi-people-fill mt-0 mb-2"></i>User</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="bi bi-person mb-2"></i><a href="/Anggota">Anggota</a></li>
                             <li><i class="bi bi-person-gear"></i><a href="/Petugas">Petugas</a></li>
@@ -71,10 +81,13 @@
                     </li>
                     <h3 class="menu-title">Transaksi</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon bi bi-book mt-0 mb-2"></i>Buku</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"> <i class="menu-icon bi bi-book mt-0 mb-2"></i>Buku</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="bi bi-arrow-left-right mt-0 mb-2"></i><a href="charts-chartjs.html">Peminjaman Buku</a></li>
-                            <li><i class="bi bi-check-lg mt--0 mb-2"></i><a href="charts-flot.html">Pengembalian Buku</a></li>
+                            <li><i class="bi bi-arrow-left-right mt-0 mb-2"></i><a href="Peminjaman">Peminjaman Buku</a>
+                            </li>
+                            <li><i class="bi bi-check-lg mt--0 mb-2"></i><a href="charts-flot.html">Pengembalian
+                                    Buku</a></li>
                             <li><i class="bi bi-currency-dollar mt-0"></i><a href="charts-flot.html">Denda</a></li>
                         </ul>
                     </li>
@@ -98,43 +111,42 @@
                     <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
                     <div class="header-left">
                         <div class="dropdown for-message">
-                            
-                        <a class="nav-link" href="<?= base_url('login/logout') ?>">
-                        <i class="fa fa-power-off"></i> Logout</a>
+
+
                             <div class="dropdown-menu" aria-labelledby="message">
                                 <p class="red">You have 4 Mails</p>
                                 <a class="dropdown-item media bg-flat-color-1" href="#">
-                                <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
-                                <span class="message media-body">
-                                    <span class="name float-left">Jonathan Smith</span>
-                                    <span class="time float-right">Just now</span>
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/1.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Jonathan Smith</span>
+                                        <span class="time float-right">Just now</span>
                                         <p>Hello, this is an example msg</p>
-                                </span>
-                            </a>
+                                    </span>
+                                </a>
                                 <a class="dropdown-item media bg-flat-color-4" href="#">
-                                <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
-                                <span class="message media-body">
-                                    <span class="name float-left">Jack Sanders</span>
-                                    <span class="time float-right">5 minutes ago</span>
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/2.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Jack Sanders</span>
+                                        <span class="time float-right">5 minutes ago</span>
                                         <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                </span>
-                            </a>
+                                    </span>
+                                </a>
                                 <a class="dropdown-item media bg-flat-color-5" href="#">
-                                <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
-                                <span class="message media-body">
-                                    <span class="name float-left">Cheryl Wheeler</span>
-                                    <span class="time float-right">10 minutes ago</span>
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/3.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Cheryl Wheeler</span>
+                                        <span class="time float-right">10 minutes ago</span>
                                         <p>Hello, this is an example msg</p>
-                                </span>
-                            </a>
+                                    </span>
+                                </a>
                                 <a class="dropdown-item media bg-flat-color-3" href="#">
-                                <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
-                                <span class="message media-body">
-                                    <span class="name float-left">Rachel Santos</span>
-                                    <span class="time float-right">15 minutes ago</span>
+                                    <span class="photo media-left"><img alt="avatar" src="images/avatar/4.jpg"></span>
+                                    <span class="message media-body">
+                                        <span class="name float-left">Rachel Santos</span>
+                                        <span class="time float-right">15 minutes ago</span>
                                         <p>Lorem ipsum dolor sit amet, consectetur</p>
-                                </span>
-                            </a>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -142,13 +154,17 @@
 
                 <div class="col-sm-5">
                     <div class="user-area dropdown float-right">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <img class="user-avatar rounded-circle" src="images/profile.png" alt="User Avatar">
                         </a>
                         <div class="user-menu dropdown-menu" style="min-width: 300px;">
+                            <p class="text-center" style="font-size: 25px;">Profil Petugas</p>
                             <p><i class="fa fa-user"></i> Email: <?= $admin['email'] ?></p>
                             <p><i class="fa fa-user"></i> Username: <?= $admin['username'] ?></p>
                             <p><i class="fa fa-cog"></i> Role: <?= $admin['role'] ?></p>
+                            <a class="nav-link" href="<?= base_url('login/logout') ?>">
+                                <i class="fa fa-power-off"></i> Logout</a>
                         </div>
                     </div>
                 </div>

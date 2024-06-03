@@ -57,7 +57,7 @@
                                     <tbody>
                                         <?php $no = 1;
                                         foreach ($anggota as $key => $value) { 
-                                          if ($value['role'] == 'Anggota') {?>
+                                          if ($value['role'] == 'Anggota') { ?>
                                         <tr>
                                             <td  class="text-center"><?= $no++ ?>.</td>
                                             <td  class="text-center"><?= $value['nama'] ?></td>

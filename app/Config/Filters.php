@@ -90,8 +90,6 @@ class Filters extends BaseFilters
                 'except' => [
                     'login', 'login/*',
                     'Home', 'index/*',
-                    'Kategori', 'index/*',
-                    'Penerbit', 'index/*',
                     '/'
                 ]
             ]
@@ -126,5 +124,6 @@ class Filters extends BaseFilters
      */
     public array $filters = [
         'AdminAuth' => ['before' => ['dashboard/*']],
+        'Kategori' => ['before' => ['index/*']],
     ];
 }

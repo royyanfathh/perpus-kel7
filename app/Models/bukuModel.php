@@ -31,4 +31,17 @@ class bukuModel extends Model
         ->where('id', $data['id'])
         ->update($data);
    }
+   protected $table = 'tb_user';
+   public function HitungData()
+   {
+     return $this->countAll();
+   }
+
+   public function getBuku($id = false)
+   {
+     if($id == false){
+          return $this->findAll();
+     }
+     return $this->where(['id' => $id])->first();
+   }
 }

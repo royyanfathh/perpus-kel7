@@ -31,4 +31,9 @@ class KategoriModel extends Model
         ->where('id', $data['id'])
         ->update($data);
    }
+   protected $table = 'tb_kategori';
+   public function HitungData()
+   {
+     return $this->countAll();
+   }
 }
